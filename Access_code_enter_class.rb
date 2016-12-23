@@ -48,6 +48,7 @@ class Access_code_enter
       # #Watir::Wait.until() {browser.text.include? "Dwelling Form"}
       # #another way to write an explicit wait, is to wait for an element to load
          browser.element(css: "button.add-people-button").wait_until_present
+         expect(browser.element(css: "button.add-people-button").exists?).to eql true
          browser.close
       end
     end
