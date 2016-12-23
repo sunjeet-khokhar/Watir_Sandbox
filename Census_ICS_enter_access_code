@@ -13,4 +13,3 @@ browser.select_list(id: "lang-chooser").select_value("da")
 puts(browser.url)
 expect(browser.url).to eql 'https://www.google.com/doodles?hl=da'
 browser.close
-
