@@ -13,11 +13,3 @@ browser_1.parse_and_navigate('SJ_Codes_wb')
 # browser.tear_down()
 
 puts('check')
-
-
-
-
-
-
-
-

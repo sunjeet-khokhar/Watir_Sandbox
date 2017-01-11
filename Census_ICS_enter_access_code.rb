@@ -32,6 +32,4 @@ browser.close
 end
 end
 
-enter_access_code('SJ_Codes_wb_1')
-
-
+#enter_access_code('SJ_Codes_wb_1')
