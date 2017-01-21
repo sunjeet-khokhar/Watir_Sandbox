@@ -1,5 +1,5 @@
  #START_BUTTON = {tag_name: 'button'}
-    
+
   #FINISH_TEXT = {id: 'finish'}
 
 
@@ -11,11 +11,13 @@ require 'creek'
 
 BASE_URL = 'https://censusinterim-uat.cwp.govt.nz/census-test/'
 
+@access_code_box_1 =
+
 class Access_code_enter
-  
+
   def initialize()
-    
-    
+
+
     #@driver.get "http://the-internet.herokuapp.com/dynamic_loading/1"
   end
 
@@ -32,7 +34,7 @@ class Access_code_enter
     row.each do |col,value|
          print value
          arr = value.to_s.split('')
-      
+
          ac1 = arr[0..2]
          ac2 = arr[3..5]
          ac3 = arr[6..8]
@@ -70,9 +72,3 @@ end
 # end
 
 #end
-
-
-
-  
-  
-  
