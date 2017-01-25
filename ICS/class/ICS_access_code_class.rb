@@ -44,14 +44,16 @@ class ICS_access_code_class
 
     @browser.element(name: '_hsp._addPersonForm.newPerson._field.type').click
     @browser.element(css: 'button.button-save').wait_until_present.click
-    sleep(5)
+
 
   end
 
   def add_IF_adult_long_path(form_number)
       #@browser.element(css: 'button.button-start-form').wait_until_present.click
       @browser.element(xpath: "/html/body/main/div/my-app/router-outlet[2]/div/form/div[2]/table/tbody/tr["+form_number+"]/td[2]/button").wait_until_present.click
-       sleep(5)
+=begin
+Filling form data code goes here      
+=end
        begin
        @browser.back
      rescue Selenium::WebDriver::Error::UnknownError
